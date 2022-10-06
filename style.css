@@ -31,7 +31,7 @@ body {
 
 @media (max-width: 800px) {
     .grid {
-        grid-template-columns: 100%;
+        grid-template-columns: 1;
         row-gap: 5px;
     }
 
