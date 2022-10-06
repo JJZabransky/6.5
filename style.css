@@ -1,3 +1,42 @@
 body {
     width: 100%;
 }
+
+.grid{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    background-color: chocolate;
+}
+
+.grid a {
+    border: solid 1px;
+    padding: 20px;
+    border-color: black;
+    color: black;
+    background-color: darkgray;
+}
+
+.flex {
+    display: flex;
+    background-color: crimson;
+}
+
+.flex h2, .flex p {
+    margin: 10px;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 100%;
+        row-gap: 5px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
